@@ -47,3 +47,7 @@ img{
     color: white;
     margin: 0 5px 0 5px;
 }
+
+.circle-box .active{
+    color: blue;
+}
