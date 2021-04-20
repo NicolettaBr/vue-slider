@@ -1,0 +1,48 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.box-images{
+    padding: 0 40px 0 40px;
+}
+
+.arrow{
+    font-size: 30px;
+}
+
+/*circle box*/
+.circle-box{
+    background-color: black;
+    opacity: 0.6;
+    padding: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 40px;
+}
+
+.circle{
+    display: inline-block;
+    color: white;
+    margin: 0 5px 0 5px;
+}
