@@ -16,27 +16,28 @@
         methods: {
             //funzione che al click sulla freccia destra scorre indice successivo di currentImage
             nextImage(){
-                
-                this.currentImage = this.currentImage + 1 ;
 
-                if(this.currentImage > imagesPath.length - 1){
+                const index  = this.currentImage + 1 ;
+
+                if(index > this.imagesPath.length - 1){
                     this.currentImage = 0;
                 }else{
-                    this.currentImage = this.currentImage + 1 ;
+                    this.currentImage = index ;
+                }
+
+            },
+            
+            prevImage(){
+
+                const index = this.currentImage - 1;
+
+                if(index < 0){
+                    this.currentImage = this.imagesPath.length -1;
+                }else{
+                    this.currentImage = index;
                 }
 
             }
-            /*
-            prevImage(){
-
-                this.currentImage = this.currentImage - 1;
-
-                if(this.currentImage < 0){
-                    this.currentImage = imagesPath.length -1;
-                }else{
-                    this.currentImage = this.currentImage - 1;
-                }
-            }*/
 
         }
     }
