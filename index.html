@@ -42,22 +42,10 @@
             <!--circle-box-->
             <div class="circle-box">
 
-                <div class="circle active">
+                <div v-for="(image, index) in imagesPath" class="circle" :class="{'active' : index == currentImage} " >
                     <i class="fas fa-circle"></i>
                 </div>
 
-                <div class="circle">
-                    <i class="fas fa-circle"></i>
-                </div>
-
-                <div class="circle">
-                    <i class="fas fa-circle"></i>
-                </div>
-
-                <div class="circle">
-                    <i class="fas fa-circle"></i>
-                </div>
-                
             </div>
 
         </div>
